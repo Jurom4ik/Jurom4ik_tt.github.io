@@ -1,45 +1,83 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #0e0e0e;
-  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://i.imgur.com/MYX5BuU.jpg') no-repeat center center fixed;
+  background-size: cover;
   margin: 0;
   padding: 0;
-  text-align: center;
+  color: #fff;
+  backdrop-filter: blur(10px);
 }
 
 header {
+  text-align: center;
   padding: 20px;
-  background: #1a1a1a;
+  background: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+#cart {
+  margin-top: 10px;
+  font-size: 18px;
 }
 
 main {
-  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .item {
-  background: #1f1f1f;
-  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
   padding: 20px;
-  width: 300px;
-  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-.buy-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
+.item h2 {
+  margin: 10px 0;
+}
+
+.item span {
+  display: block;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.item button {
   background: #ff4040;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.buy-btn:hover {
+.item button:hover {
   background: #ff7070;
 }
 
 footer {
+  text-align: center;
   padding: 20px;
-  background: #1a1a1a;
+  background: rgba(0, 0, 0, 0.5);
   margin-top: 40px;
+}
+
+.pay-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  background: #00c896;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.pay-btn:hover {
+  background: #00e6a5;
 }
