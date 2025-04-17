@@ -2,33 +2,38 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Магазин от Jurom4ik_tt</title>
+  <title>FlordShop от Jurom4ik_tt</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Магазин Minecraft Плагинов</h1>
-    <p>От @Jurom4ik_tt</p>
+    <h1>FlordShop</h1>
+    <p>Лучшие плагины для Minecraft от @Jurom4ik_tt</p>
+    <div id="cart">🛒 Корзина: <span id="cart-count">0</span></div>
   </header>
 
   <main>
     <div class="item">
-      <h2>FlordBan</h2>
-      <p>Улучшенная система банов для сервера.</p>
-      <span>Цена: 50 грн</span>
-      <a href="https://discord.gg/pYyaqtV6Pt" target="_blank" class="buy-btn">Купить</a>
+      <h2>BungeeFlord</h2>
+      <p>Статус серверов вокруг BungeeCord.</p>
+      <span>70 грн</span>
+      <button onclick="addToCart('BungeeFlord', 70)">В корзину</button>
     </div>
 
     <div class="item">
-      <h2>FlordSync</h2>
-      <p>Синхронизация команд между серверами.</p>
-      <span>Цена: 70 грн</span>
-      <a href="https://discord.gg/pYyaqtV6Pt" target="_blank" class="buy-btn">Купить</a>
+      <h2>FlordTech</h2>
+      <p>Красивое оповещение о техперерывах в Discord.</p>
+      <span>50 грн</span>
+      <button onclick="addToCart('FlordTech', 50)">В корзину</button>
     </div>
   </main>
 
   <footer>
-    <p>© 2025 Jurom4ik_tt. Все права защищены.</p>
+    <a href="https://t.me/jurom4ik" class="pay-btn">💸 Оплатить в Telegram</a>
+    <a href="https://discord.gg/pYyaqtV6Pt" class="pay-btn">💸 Оплатить в Discord</a>
+    <p>© 2025 FlordDev & Jurom4ik_tt</p>
   </footer>
+
+  <script src="cart.js"></script>
 </body>
 </html>
